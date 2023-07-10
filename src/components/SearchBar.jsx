@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { default as axios } from 'axios';
-// import searchIcon from '../assets/search-icon.png'
+import searchIcon from '../assets/search-icon.png'
 
 const pixabayAPI = import.meta.env.VITE_PIXABAY_KEY
 
@@ -16,17 +16,20 @@ function SearchBar({setImages}) {
   }
 
   return (
-    <form onSubmit={(e) => handleSubmit(e)}>
+    <form className="py-2 px-3" onSubmit={(e) => handleSubmit(e)}>
       <input 
+        className="border-2 border-solid shadow-search w-3/5"
         type="text" 
         name="image-searchbar" 
         placeholder="Search..."
-        val
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <button className="p-5" disabled={searchTerm.length == 0 ? true : false}>
-        {/* <img src={searchIcon} alt="search-button" /> */}
-        <p>search</p>
+      <button className="p-3" disabled={searchTerm.length == 0 ? true : false}>
+        <img 
+          className="w-7 h-7"
+          src={searchIcon} 
+          alt="search-button" 
+        />
       </button>
     </form>
   )

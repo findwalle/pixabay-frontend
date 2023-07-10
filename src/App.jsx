@@ -11,7 +11,7 @@ function App() {
   // TODO: wrap in queryclient for cached fetch
 
   return (
-    <div className="h-fit flex flex-col justify-center items-center">
+    <div className="h-screen flex flex-col justify-center items-center">
       <SearchBar setImages={setImages}/>
       {images.length ? <ImageContainer images={images}/> : null}
     </div>
