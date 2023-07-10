@@ -3,7 +3,7 @@ import Image from "../components/Image";
 function ImageContainer({images}) {
   
   return (
-    <div key='image-container'>
+    <div key='image-container' className="grid grid-cols-5 place-items-center h-3/5">
       {
         images.length ? 
         images.map(details => {
