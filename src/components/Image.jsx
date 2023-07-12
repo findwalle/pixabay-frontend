@@ -5,9 +5,10 @@ function Image({details}) {
   const { isOpen, openModal, closeModal } = useModal();
 
   return (
-    <div>
-      <button onClick={openModal}>
+    <div className="image-frame">
+      <button className="image-modal-btn" onClick={openModal}>
         <img
+          className="image"
           src={details.webformatURL}
           alt={details.alt} 
           />

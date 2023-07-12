@@ -1,0 +1,18 @@
+.image-frame {
+  height: 100%;
+  width: 100%;
+
+  .image-modal-btn {
+    height: 100%;
+    width: 100%;
+    max-width: auto;
+    max-height: auto;
+    background: white;
+    border: none;
+
+    .image {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

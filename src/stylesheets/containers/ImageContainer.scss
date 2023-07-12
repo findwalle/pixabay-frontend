@@ -1,0 +1,15 @@
+#images-container {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+
+  overflow-y: scroll;
+  
+  // box-shadow: 3px 1px 0px 2px, 0px -1px 0px 2px rgba(0, 0, 0, 0.62);
+  border-top: 2px solid black;
+}

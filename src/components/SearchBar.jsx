@@ -32,7 +32,6 @@ function SearchBar({setImages}) {
           src={searchIcon} 
           alt="search-button" 
         />
-        {/* <p>ok</p> */}
       </button>
     </form>
   )
