@@ -16,17 +16,19 @@ function SearchBar({setImages}) {
   }
 
   return (
-    <form className="py-2 px-3" onSubmit={(e) => handleSubmit(e)}>
+    <form className="searchbar-form" onSubmit={(e) => handleSubmit(e)}>
+      <label className="searchbar-label">Search</label>
       <input 
-        className="border-2 border-solid shadow-search w-3/5"
+        className="searchbar-input"
         type="text" 
         name="image-searchbar" 
-        placeholder="Search..."
+        placeholder="Search"
         onChange={(e) => setSearchTerm(e.target.value)}
+        required
       />
-      <button className="p-3" disabled={searchTerm.length == 0 ? true : false}>
+      <button className="searchbar-submit-btn" disabled={searchTerm.length == 0 ? true : false}>
         <img 
-          className="w-7 h-7"
+          className="search-btn-img"
           src={searchIcon} 
           alt="search-button" 
         />

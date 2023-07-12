@@ -1,0 +1,23 @@
+/* Imports */
+/* Application */
+@import './App.css';
+
+/* Components */
+@import './components/SearchBar.scss';
+@import './components/Image.scss';
+@import './components/ImageModal.scss';
+
+/* Containers */
+@import './containers/ImageContainer.scss';
+
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Knewave', cursive;
+  margin: 0px;
+}
