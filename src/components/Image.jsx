@@ -8,7 +8,6 @@ function Image({details}) {
     <div>
       <button onClick={openModal}>
         <img
-          className="block p-3 max-h-fit"
           src={details.webformatURL}
           alt={details.alt} 
           />

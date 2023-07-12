@@ -6,8 +6,8 @@ function ImageModal({ isOpen, setClose, details }) {
   // TODO: address userImageURL not loading
 
   return (
-    <div className="fixed inset-0 z-10 flex flex-col items-center justify-center bg-slate-100">
-      <button className="h-500 w-500" onClick={setClose}>X</button>
+    <div>
+      <button onClick={setClose}>X</button>
       <img src={details.userImageURL} alt="user profile picture" />
       <h1 className="">User: {details.user}</h1>
       <img src={details.webformatURL}></img>
