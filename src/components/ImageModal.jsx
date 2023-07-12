@@ -6,13 +6,15 @@ function ImageModal({ isOpen, setClose, details }) {
 
   return (
     <div className="image-modal">
-      <button className="modal-close-btn" onClick={setClose}>Back</button>
-      <img className="modal-user-pfp" src={details.userImageURL} alt="user profile picture" />
-      <h1 className="modal-username">{details.user}</h1>
+      <div className="modal-top-section">
+        <img className="modal-user-pfp" src={details.userImageURL} alt="user profile picture" />
+        <h1 className="modal-username">{details.user}</h1>
+        <button className="modal-close-btn" onClick={setClose}>Back</button>
+      </div>
       <img className="modal-img" src={details.webformatURL}></img>
       <ul className="modal-tags">
         {details.tags.split(',').map((tag) => {
-          return <li>{tag}</li>
+          return <li>{`#${tag.trim()}`}</li>
         })}
       </ul>
     </div>
