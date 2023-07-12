@@ -9,7 +9,7 @@ function ImageModal({ isOpen, setClose, details }) {
       <div className="modal-top-section">
         <img className="modal-user-pfp" src={details.userImageURL} alt="user profile picture" />
         <h1 className="modal-username">{details.user}</h1>
-        <button className="modal-close-btn" onClick={setClose}>Back</button>
+        <button className="modal-close-btn" onClick={setClose}>X</button>
       </div>
       <img className="modal-img" src={details.webformatURL}></img>
       <ul className="modal-tags">
